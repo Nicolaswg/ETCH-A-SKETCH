@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+label,
+a {
+  font-family: "Fugaz One", cursive;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.title {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Press Start 2P", cursive;
+  color: rgb(236, 236, 236);
+}
+
+.grid-style {
+  width: 280px;
+  height: 300px;
+  position: absolute;
+  left: 50px;
+  top: 150px;
+  background: #2980b9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #6dd5fa,
+    #2980b9
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 3px 1px 5px rgba(37, 37, 37, 0.75);
+  border-radius: 10px;
+  padding: 10px;
+}
+.grid-style #panel-title {
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.grid-style #num-rows {
+  display: block;
+  margin: 10px 0 10px 25px;
+}
+
+.grid-style #num-column {
+  display: block;
+  margin: 20px 0 10px 25px;
+}
+
+.grid-style #grid-button {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+  width: 200px;
+  background-color: rgba(18, 129, 233, 0.8);
+  border-radius: 20px;
+  box-shadow: 6px 6px 20px rgba(37, 37, 37, 0.75);
+  color: white;
+}
+
+.grid-style #grid-button:hover {
+  background-color: rgba(13, 219, 13, 0.3);
+  transition: all 0.7s ease;
+}
+
+.grid-style #reset-button {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  padding: 10px;
+  width: 200px;
+  background-color: rgba(15, 109, 197, 0.8);
+  border-radius: 20px;
+  box-shadow: 6px 6px 20px rgba(37, 37, 37, 0.75);
+  color: white;
+}
+
+.grid-style #reset-button:hover {
+  background-color: rgba(233, 10, 10, 0.7);
+  transition: all 0.7s ease;
+}
+.grid-container {
+  max-width: 400px;
+  min-height: 400px;
+  display: grid;
+  margin: 150px auto;
+  border-radius: 2px;
+  
+}
+
+.style-grid-Elements {
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 0.9px;
+  max-width: 100px;
+}
